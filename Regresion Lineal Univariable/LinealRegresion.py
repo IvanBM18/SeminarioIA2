@@ -64,7 +64,9 @@ class LinealRegresion:
         
     def predictData(self,x : int, y : int):
         predicted = self.bias + (self.weight * x)
-        print(f'Predicted value for X={x} is {predicted}, Correct value is {y}')
+        print(f'a0={self.bias}, a1={self.weight}')
+        print(f'Error actual, J={self.error}')
+        print(f'Valor predicho para x={x} es h={predicted}, Valor correcto y={y}')
         self.ax.plot(x,predicted,"o",color = "red",mec = "black")
     
 if __name__ == "__main__":
